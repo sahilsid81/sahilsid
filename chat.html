@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Cart</title>
+</head>
+<body>
+    <header>
+        <header>
+            <h1>warmly knitwear</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="tel:9557978110">Contact Us</a></li> <!-- Add the Contact Us link here -->
+                </ul>
+            </nav>
+        </header>
+    </header>
+
+    <section class="product-container">
+        <!-- Product cards -->
+        <div class="product-card" id="product1">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>lamswool knitted zipper jacket, cream and brown color</h2>
+            <p>Price: $20</p>
+            <button onclick="addToCart('lamswool knitted zipper jacket, cream and brown color', 20)">Add to Cart</button>
+
+        </div>
+
+        <div class="product-card" id="product2">
+            <img src="product2.jpeg" alt="Product 2">
+            <h2>blue zipper hoodies sweater</h2>
+            <p>Price: $10</p>
+            <button onclick="addToCart('blue zipper hoodies sweater', 10)">Add to Cart</button>
+
+        </div>
+
+        <div class="product-card" id="product3">
+            <img src="product3.jpeg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>Price: $14</p>
+            <button onclick="addToCart('Product 3', 14)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product4">
+            <img src="product4.jpeg" alt="Product 4">
+            <h2>Product 4</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 4', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product5">
+            <img src="product5.jpeg" alt="Product 5">
+            <h2>Product 5</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 5', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product6">
+            <img src="product6.jpg" alt="Product 6">
+            <h2>Product 6</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 6', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product7">
+            <img src="product7.jpg" alt="Product 7">
+            <h2>Product 7</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 7', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product8">
+            <img src="product8.jpg" alt="Product8">
+            <h2>Product 8</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 8', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product9">
+            <img src="product9.jpg" alt="Product 9">
+            <h2>Product 9</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 9', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product10">
+            <img src="product10.jpg" alt="Product 10">
+            <h2>Product 10</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 10', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product11">
+            <img src="product11.jpg" alt="Product 11">
+            <h2>Product 11</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 11', 3)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="product12">
+            <img src="product12.jpeg" alt="Product 12">
+            <h2>Product 12</h2>
+            <p>Price: $3</p>
+            <button onclick="addToCart('Product 12', 3)">Add to Cart</button>
+        </div>
+        <div class="product-card" id="product1">
+            <div class="product-images">
+                <img src="product1-1.jpeg" alt="Product 1 Image 1">
+                <img src="product1-2.jpeg" alt="Product 1 Image 2">
+                <img src="product1-3.jpeg" alt="Product 1 Image 3">
+            </div>
+            <h2>Product 13</h2>
+            <p>Price: $2</p>
+            <button onclick="addToCart('Product 1', 12)">Add to Cart</button><br>
+            <a href="https://wa.me/9557978110?text=I%20want%20to%20place%20an%20order%20for%20Product%201" target="_blank">Order on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <aside class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <!-- Order Form -->
+    <form id="order-form">
+        <label for="customer-name">Your Name:</label>
+        <input type="text" id="customer-name" required><br>
+
+        <label for="customer-address">Delivery Address:</label>
+        <textarea id="customer-address" rows="4" required></textarea><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" required><br>
+        <input type="submit" value="Submit Order">
+    </form>
+    
+    </aside>
+     <script src="whatsapp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
